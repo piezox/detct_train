@@ -11,7 +11,7 @@ mnist = tf.keras.datasets.mnist
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 x_train, x_test = x_train / 255.0, x_test / 255.0
 
-# Build the tf.keras.Sequential model by stacking layers. Choose an optimizer and loss function for training
+# Build the tf.keras.Sequential model by stacking layers. Choose an optimizer and loss function for training.
 
 model = tf.keras.models.Sequential([
   tf.keras.layers.Flatten(input_shape=(28, 28)),
